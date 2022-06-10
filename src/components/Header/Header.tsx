@@ -1,5 +1,4 @@
 import { Container } from './styles'
-import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react';
 import Resume from '../../assets/Burhan_Uddin.pdf'
@@ -12,14 +11,14 @@ export function Header(this: any) {
 
   return (
     <Container className="header-fixed">
-      <Router>
-        <HashLink smooth to="#home" className="logo">
+      <>
+        <HashLink smooth to="/" className="logo">
           <span>Burhan </span>
           <span>Uddin</span>
         </HashLink>
 
         <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
+          <NavHashLink smooth to="/" onClick={closeMenu}>
             Home
           </NavHashLink>
           <NavHashLink smooth to="#about-me" onClick={closeMenu}>
@@ -31,7 +30,7 @@ export function Header(this: any) {
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <NavHashLink smooth to="#blogs" onClick={closeMenu}>
+          <NavHashLink smooth to="/blogs" onClick={closeMenu}>
             Blogs
           </NavHashLink>
           <a href={Resume} download className="button">
@@ -48,7 +47,7 @@ export function Header(this: any) {
             setActive(!isActive)
           }}
         ></div>
-      </Router>
+      </>
     </Container>
   )
 }

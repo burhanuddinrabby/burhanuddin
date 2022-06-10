@@ -79,6 +79,18 @@ export const Container = styled.section`
           font-size: 1.4rem;
         }
       }
+      .detail-btn{
+        width: 100%;
+        margin-top: 1rem;
+        a{
+          padding: 10px 20px;
+          text-transform: uppercase;
+          text-align: center;
+          background-color: var(--green);
+          border-radius: 999px;
+          color: #000;
+        }
+      }
 
     }
   }

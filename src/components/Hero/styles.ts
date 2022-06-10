@@ -40,7 +40,7 @@ export const Container = styled.section`
 
 
   @media(max-width: 960px){
-    display: block;
+    flex-direction:column-reverse;
     margin-top: 15%;
     .hero-text{
 
@@ -50,7 +50,9 @@ export const Container = styled.section`
     }
     
     .hero-image{
-      display: none;
+      img{
+        width:100%;
+      }
     }
   }
 
