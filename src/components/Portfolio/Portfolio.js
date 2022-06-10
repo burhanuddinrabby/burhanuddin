@@ -3,6 +3,9 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import ComputerClinic from "../../assets/ComputerClinic.png"
+import BikeBazar from "../../assets/BikeBazar.png"
+import Photography from "../../assets/Photography.png"
 
 export function Portfolio() {
   return (
@@ -25,9 +28,25 @@ export function Portfolio() {
               </div>
             </header>
             <div className="body">
+              <img src={ComputerClinic} alt="" />
               <h3>IHAM Computer Clinic</h3>
-              <p>Responsive SPA for Wholesale Computer Parts Supplier. Admin Panel For Products & Order Management. Payment Method Included.
-              </p>
+              <ul>
+                <li>
+                  It's a full stack web project.
+                </li>
+                <li>
+                  Responsive SPA for Wholesale Computer Parts Supplier.
+                </li>
+                <li>
+                  Admin Panel For Products & Order Management.
+                </li>
+                <li>
+                  Payment Method included using Stripe.
+                </li>
+                <li>
+                  User authentication using firebase.
+                </li>
+              </ul>
             </div>
             <footer>
               <ul className="tech-list">
@@ -53,10 +72,25 @@ export function Portfolio() {
               </div>
             </header>
             <div className="body">
+              <img src={BikeBazar} alt="" />
               <h3>IHAM Bike Bazar</h3>
-              <p>It is a full stack web project, including user authentication. A site for buying bikes. User can increase or decrease quantity
-                User can delete an item or can add an item to his/her account
-              </p>
+              <ul>
+                <li>
+                  It is a full stack web project.
+                </li>
+                <li>
+                  User authentication using firebase.
+                </li>
+                <li>
+                  A site for buying bikes.
+                </li>
+                <li>
+                  User can increase or decrease quantity
+                </li>
+                <li>
+                  User can delete an item or can add an item to his/her account
+                </li>
+              </ul>
             </div>
             <footer>
               <ul className="tech-list">
@@ -83,11 +117,25 @@ export function Portfolio() {
               </div>
             </header>
             <div className="body">
+              <img src={Photography} alt="" />
               <h3>IHAM Photography</h3>
-              <p>About an independent photographer and his services.
-                User must have to log in to visit checkout page.
-                Implemented user authentication.
-              </p>
+              <ul>
+                <li>
+                  Implemented user authentication.
+                </li>
+                <li>
+                  About an independent photographer and his services.
+                </li>
+                <li>
+                  User must have to log in to visit checkout page.
+                </li>
+                <li>
+                  Email verification added.
+                </li>
+                <li>
+                  Forgot Password route included.
+                </li>
+              </ul>
             </div>
             <footer>
               <ul className="tech-list">

@@ -4,12 +4,7 @@ import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react';
 import Resume from '../../assets/Burhan_Uddin.pdf'
 export function Header(this: any) {
-  const [isActive, setActive] = useState(false)
-
-  function toggleTheme() {
-    let html = document.getElementsByTagName('html')[0]
-    html.classList.toggle('light')
-  }
+  const [isActive, setActive] = useState(false);
 
   function closeMenu() {
     setActive(false)
@@ -23,15 +18,6 @@ export function Header(this: any) {
           <span>Uddin</span>
         </HashLink>
 
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
-
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
@@ -44,6 +30,9 @@ export function Header(this: any) {
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
+          </NavHashLink>
+          <NavHashLink smooth to="#blogs" onClick={closeMenu}>
+            Blogs
           </NavHashLink>
           <a href={Resume} download className="button">
             Resume

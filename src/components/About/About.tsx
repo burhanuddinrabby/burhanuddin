@@ -1,5 +1,4 @@
 import { Container } from "./styles";
-
 import profileImage from "../../assets/illustration.png"
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -10,8 +9,6 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import vsCode from "../../assets/vscode-icon.svg";
 import bootstrap from "../../assets/bootstrap-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-
-
 export function About() {
   return (
     <Container id="about-me">

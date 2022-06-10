@@ -31,13 +31,24 @@ export const Container = styled.section`
         transform: translateY(-5px);
         background-color: var(--pink);
       }
+      .body{
+        img{
+          margin: 1rem 0;
+          width: 100%;
+          border-radius: 1.2rem;
+        }
+        ul{
+          li{
 
+            list-style: disc inside;
+          }
+        }
+      }
       header{
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: var(--blue);
-        margin-bottom: 3.6rem;
         .project-links{
           display: flex;
           align-items: center;
@@ -53,16 +64,14 @@ export const Container = styled.section`
       }
       
       h3{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
-      p{
-        letter-spacing: 0.12rem;
-        margin-bottom: 2rem;
+      ul{
+        margin-bottom: 1rem;
       }
 
       footer{
-        margin-top: auto;
         .tech-list{
           display: flex;
           align-items: center;
